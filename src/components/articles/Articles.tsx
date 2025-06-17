@@ -6,8 +6,6 @@ import { useNavigate } from "react-router-dom";
 
 function Articles() {
   const [articles, setArticles] = useState<any>([]);
-  // const { state: userDetails, dispatch: setUserDetails } =
-  //   useContext(AuthContext);
 
   const navigate = useNavigate();
 
@@ -18,13 +16,8 @@ function Articles() {
         const response = await axios.get(
           "https://sportkosher-server.up.railway.app/api/articles"
         );
-
+        setArticles(response.data);
         console.log(response.data);
-        // console.log(articles);
-        // const accessToken = window.localStorage.getItem("accessToken");
-        // if (accessToken) {
-        //   setUserDetails(getUserDataFromToken(accessToken));
-        // }
       } catch (error) {
         console.log("error with getting data :", error);
       }
