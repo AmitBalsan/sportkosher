@@ -18,7 +18,7 @@ function Articles() {
         const response = await axios.get(
           "https://sportkosher-server.up.railway.app/api/articles"
         );
-        setArticles(response.data);
+        // setArticles(response.data);
         console.log(response.data);
         console.log(articles);
         // const accessToken = window.localStorage.getItem("accessToken");
