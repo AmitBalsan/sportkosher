@@ -1,0 +1,25 @@
+.addProduct {
+  margin-top: 7rem;
+  border-style: solid;
+  border-color: brown;
+  border-width: 1.3px;
+  padding: 15px;
+  border-radius: 10px;
+  width: 25vw;
+  height: max-content;
+  margin-bottom: 5rem;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 9vh;
+    input {
+      width: 20vw;
+      margin-bottom: 5vh;
+    }
+    button {
+      background-color: coral;
+    }
+  }
+}

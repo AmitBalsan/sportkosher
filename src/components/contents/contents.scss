@@ -1,0 +1,36 @@
+.contents {
+  background-color: white;
+  height: max-content;
+  // position: relative;
+  display: flex;
+  flex-direction: column;
+  // justify-content: center;
+  // align-items: center;
+
+  img {
+    width: 8rem;
+    height: 7rem;
+    border-radius: 20px;
+    box-shadow: 12px 14px 8px rgb(139 136 131);
+  }
+
+  &__store--protein,
+  &__store--equipment,
+  &__articles {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 100px;
+  }
+  &__store--card,
+  &__articles--card {
+    width: 40vw;
+    height: max-content;
+    background-color: rgb(95 98 99 / 30%);
+    border: solid 2px rgb(251, 246, 246);
+    border-radius: 20px;
+    box-shadow: 12px 14px 8px rgb(139 136 131);
+  }
+  > *:first-child {
+    margin-top: 100px;
+  }
+}

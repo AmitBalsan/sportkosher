@@ -1,0 +1,62 @@
+.header {
+  background-image: url("../../assets/background-shoes.jpg");
+  height: 50rem;
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  margin-top: 4rem;
+  position: relative;
+  &__rightSide {
+    position: absolute;
+    margin-right: 10%;
+    margin-top: 100px;
+    h1 {
+      color: #ff8c00;
+      font-weight: 600;
+      font-size: 4rem;
+    }
+    h2 {
+      color: aliceblue;
+      font-size: 2.5rem;
+    }
+    &--buttons {
+      margin-top: 130px;
+      display: flex;
+      justify-content: space-around;
+
+      button {
+        width: 8rem;
+        height: 3.5rem;
+        font-size: large;
+      }
+    }
+    &--buttons-register {
+      background-color: #ffa500e0;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      border-color: rgb(208, 221, 221);
+
+      h4 {
+        color: azure;
+      }
+      h4:hover {
+        color: darkblue;
+      }
+    }
+
+    &--buttons-login {
+      border-color: #ffa500e0;
+      background-color: azure;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      h4 {
+        color: #ffa500e0;
+      }
+      h4:hover {
+        color: darkblue;
+      }
+    }
+  }
+}

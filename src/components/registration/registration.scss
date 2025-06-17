@@ -1,0 +1,33 @@
+.register {
+  background: url("/src/assets/green-computer.png") no-repeat center center
+    fixed;
+  width: 100%;
+  margin-top: 4rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  &__regForm {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 300px;
+    input {
+      width: 240px;
+      margin-bottom: 15px;
+      height: 30px;
+      border: solid 1px gainsboro;
+      border-radius: 3px;
+    }
+    button {
+      width: 14vw;
+      margin-bottom: 2vw;
+      text-align: center;
+      background-color: rgb(250, 181, 77);
+      color: aliceblue;
+    }
+  }
+}

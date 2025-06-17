@@ -1,0 +1,18 @@
+.readArticle {
+  margin-top: 5rem;
+  text-align: right;
+
+  &__articlesCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    img {
+      width: 550px;
+      border-radius: 15px;
+      height: 250px;
+      align-self: center;
+    }
+  }
+}
