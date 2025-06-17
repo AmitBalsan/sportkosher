@@ -16,6 +16,8 @@ function Articles() {
         const response = await axios.get(
           "https://sportkosher-server.up.railway.app/api/articles"
         );
+        console.log("RESPONSE TYPE:", typeof response.data);
+        console.log("RESPONSE CONTENT:", response.data);
         setArticles(response.data);
         console.log(response.data);
       } catch (error) {
