@@ -5,7 +5,7 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
 function Articles() {
-  // const [articles, setArticles] = useState<any>([]);
+  const [articles, setArticles] = useState<any>([]);
   // const { state: userDetails, dispatch: setUserDetails } =
   //   useContext(AuthContext);
 
@@ -18,7 +18,7 @@ function Articles() {
         const response = await axios.get(
           "https://sportkosher-server.up.railway.app/api/articles"
         );
-        // setArticles(response.data);
+
         console.log(response.data);
         // console.log(articles);
         // const accessToken = window.localStorage.getItem("accessToken");
