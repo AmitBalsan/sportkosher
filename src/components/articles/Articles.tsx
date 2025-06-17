@@ -5,7 +5,7 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
 function Articles() {
-  const [articles, setArticles] = useState<any>([]);
+  // const [articles, setArticles] = useState<any>([]);
   // const { state: userDetails, dispatch: setUserDetails } =
   //   useContext(AuthContext);
 
@@ -20,7 +20,7 @@ function Articles() {
         );
         // setArticles(response.data);
         console.log(response.data);
-        console.log(articles);
+        // console.log(articles);
         // const accessToken = window.localStorage.getItem("accessToken");
         // if (accessToken) {
         //   setUserDetails(getUserDataFromToken(accessToken));
