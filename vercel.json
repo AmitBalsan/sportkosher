@@ -1,15 +1,8 @@
 {
-  "routes": [
-    { "src": "/", "dest": "/" },
-    { "src": "/register", "dest": "/" },
-    { "src": "/login", "dest": "/" },
-    { "src": "/admin", "dest": "/" },
-    { "src": "/products", "dest": "/" },
-    { "src": "/articles", "dest": "/" },
-    { "src": "/contact", "dest": "/" },
-    { "src": "/workout", "dest": "/" },
-    { "src": "/read-article", "dest": "/" },
-    { "src": "/edit-article", "dest": "/" },
-    { "src": "/terms", "dest": "/" }
+  "rewrites": [
+    {
+      "source": "/((?!api).*)",
+      "destination": "/"
+    }
   ]
 }
