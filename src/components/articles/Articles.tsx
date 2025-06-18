@@ -1,41 +1,41 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import "./articles.scss";
 import axios from "axios";
 // import { getUserDataFromToken } from "../../contexts/AuthoProvider";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 
 function Articles() {
-  const [articles, setArticles] = useState<any>([]);
+  // const [articles, setArticles] = useState<Array<any>>([]);
 
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
   useEffect(() => {
     console.log("entered useEffect");
     const fetchData = async () => {
       try {
-        const response = await axios.get(
-          "https://sportkosher-server.up.railway.app/api/articles"
-        );
-        console.log("RESPONSE TYPE:", typeof response.data);
-        console.log("RESPONSE CONTENT:", response.data);
-        setArticles(response.data);
-        console.log(response.data);
+        const url = `${import.meta.env.VITE_API_URL}/articles`;
+        console.log("axios URL-  is:", url);
+        console.log("axios URL-.env is:", import.meta.env.VITE_API_URL);
+        const response = await axios.get(url);
+        console.log("fetched data successfully");
+        console.log("response data:", response.data);
+
+        // setArticles(response.data);
       } catch (error) {
         console.log("error with getting data :", error);
       }
     };
     fetchData();
   }, []);
-  function readTheArticle(article: any) {
-    navigate("/read-article", { state: { article } });
-  }
+  // function readTheArticle(article: any) {
+  //   navigate("/read-article", { state: { article } });
+  // }
 
-  console.log("articles array : ", articles);
   // if (userDetails.isLoggedIn == true) {
   return (
     <>
-      <div className="articles">
-        {articles.map((article: any) => (
+      {/* <div className="articles">
+        {articles?.map((article: any) => (
           <div
             className="articles__articlesCard"
             key={article._id}
@@ -48,7 +48,9 @@ function Articles() {
             <img src={article.imgUrl} />
           </div>
         ))}
-      </div>
+      </div> */}
+      <h1>working?</h1>
+      <h2>{}</h2>
     </>
   );
   // } else if (userDetails.isLoggedIn == false) {

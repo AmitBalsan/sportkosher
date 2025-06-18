@@ -36,7 +36,7 @@ function Header() {
             <div className="header__rightSide--buttons">
               <button className="header__rightSide--buttons-register">
                 <Link to="/register">
-                  <h4>להרשמה</h4>
+                  <h4>להרשמה tuuuuuu</h4>
                 </Link>
               </button>
               <button className="header__rightSide--buttons-login">

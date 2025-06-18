@@ -5,7 +5,7 @@ export default defineConfig({
   plugins: [react()],
   base: "/",
   build: {
-    outDir: "build-sportKosher",
+    outDir: "dist",
     emptyOutDir: true,
   },
 });
